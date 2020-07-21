@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <style>
+        /* full body css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 100%;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .body1 {
+            background-color: #FFFFFF;
+        }
+
+        img {
+            image-rendering: crisp-edges;
+        }
+
+        /************************************************************* 1ST Navigation **************************************************/
+        .fontA {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #333333;
+            color: #D6D6D6;
+            text-decoration: none;
+            font-size: 14px;
+            width: 100%;
+            line-height: 1.5;
+        }
+
+        .fontA a {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #333333;
+            color: #D6D6D6;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .fontA a:hover {
+            background-color: #D6D6D6;
+            color: #333333;
+        }
+
+        .logo {
+            margin-right: 4%;
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        /**************************************************************2ND Navigation ************************************************/
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+        }
+
+        .macb {
+            font-size: 22px;
+            font-weight: 600;
+            color: black;
+            line-height: 1.5;
+        }
+
+        .o {
+            font-size: 12px;
+            margin-top: 30px;
+            line-height: 1.5;
+
+        }
+
+        .o a {
+            color: #000000;
+            line-height: 1.5;
+        }
+
+        .specs {
+            font-size: 12px;
+            color: gray;
+            line-height: 1.5;
+        }
+
+        .hr1 {
+            padding-top: 2px;
+            background-color: lightgray;
+        }
+
+        .my-btn {
+            border-radius: 16px;
+            border: 1px solid #000000;
+            padding-top: 6px;
+            padding-right: 12px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            font-size: 10px;
+            line-height: 11px;
+            text-align: center;
+            background-color: #1571E3;
+            color: white;
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        /******************************************************* laptop picture section  **************************************************/
+        .hr2 {
+            padding-top: 1px;
+            background-color: lightgray;
+        }
+
+        /********************************************************* price section ********************************************************/
+        .price {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 800;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        /******************************************************* finish section *********************************************************/
+        .finish {
+            padding-top: 40px;
+            padding-bottom: 0px;
+            font-size: 24px;
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.5;
+        }
+
+        /******************************************************* display section *******************************************************/
+        .display {
+            font-size: 24px;
+            font-family: 'Nunito', sans-serif;
+            padding-top: 40px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .display2 {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 18px;
+            padding-top: 46px;
+            padding-bottom: 20px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .display2 ul {
+            list-style-position: inside;
+            line-height: 1.5;
+        }
+
+        .display3 {
+            font-size: 18px;
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.5;
+        }
+
+        /*******************************************************  processor section *****************************************************/
+        .pr {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /******************************************************* storage section *******************************************************/
+        .storage {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        .button1 {
+            border-radius: 25px;
+            padding-top: 4px;
+            padding-left: 20px;
+            padding-bottom: 4px;
+            padding-right: 20px;
+            border-color: #CE7552;
+            color: #CE7552;
+            font-size: 17px;
+            line-height: 1.5;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        /******************************************************* memory section *********************************************************/
+        .memory {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /******************************************************* graphics section *******************************************************/
+        .graph {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /************************************************ charging and expansion section *************************************************/
+        .charging {
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /************************************************** keyboard and trackpad *******************************************************/
+        .keyboard {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /************************************************** wireless section ************************************************************/
+        .ws {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /********************************************************* camera section ********************************************************/
+        .cam {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /********************************************************* video support section *************************************************/
+        .videos {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 17px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /****************************************************** audio section ************************************************************/
+        .audios {
+            padding-top: 50px;
+            padding-bottom: 30px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /****************************************************** battery and power section ************************************************/
+        .power {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /**************************************************** operating requirements section *********************************************/
+        .operating {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.5;
+        }
+
+        .orq {
+            font-size: 18px;
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.5;
+        }
+
+        /**************************************************** size and weight section ****************************************************/
+        .weight {
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.5;
+        }
+
+        /**************************************************** operating system section ***************************************************/
+        .operating2 {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /***************************************************** accessibility section *****************************************************/
+        .accb {
+            padding-top: 50px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        .accb2 {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        .accb2 ul {
+            list-style-position: inside;
+        }
+
+        /***************************************************** built in apps  section ***************************************************/
+        .app {
+            padding-top: 50px;
+            padding-bottom: 60px;
+            line-height: 1.5;
+        }
+
+        /***************************************************** in the box section ********************************************************/
+        .boxs {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /*************************************** limited warranty and service section ****************************************************/
+        .warrantys {
+            padding-top: 50px;
+            padding-bottom: 30px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /***************************************************** configure to order section *************************************************/
+        .orders {
+            padding-top: 40px;
+            padding-bottom: 36px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        .orders2 {
+            padding-top: 0px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /***************************************************** Macbook box section *************************************************/
+        .box {
+            background-color: #F6F6EE;
+            border: 5px solid #F6F6EE;
+            border-radius: 30px;
+            line-height: 1.5;
+            padding: 40px 100px;
+            margin-bottom: 70px;
+        }
+
+        .box ul {
+            list-style-position: inside;
+        }
+
+        .box3 {
+            justify-content: left;
+        }
+
+        .box4 {
+            justify-content: space-evenly;
+        }
+
+        .greens {
+            font-size: 35px;
+            font-weight: 500;
+            color: #429122;
+            line-height: 1.5;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /***************************************************** accessories section ********************************************************/
+        .as {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-size: 17px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /******************************************************** trade in section ********************************************************/
+        .trade-in {
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            background-color: #F9F9F9;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            line-height: 1.5;
+        }
+
+        .trade-in2 {
+            font-size: 17px;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /******************************************************* macbook pro section ********************************************************/
+        .p {
+            background-color: #212121;
+            line-height: 1.5;
+        }
+
+        .pro {
+            background-color: #212121;
+            font-size: 17px;
+            font-family: 'Work Sans', sans-serif;
+            text-align: center;
+            color: white;
+            padding-top: 200px;
+            line-height: 1.5;
+        }
+
+        .pro2 {
+            background-color: #212121;
+            padding-top: 100px;
+            font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+            color: white;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .pro3 {
+            background-color: #212121;
+            padding-top: 30px;
+            padding-bottom: 100px;
+            font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .hr3 {
+            border-top: 1px solid #444444;
+            line-height: 1.5;
+        }
+
+        .icons {
+            background-color: #86868B;
+            color: #212121;
+            font-size: 44px;
+            line-height: 1.5;
+            height: 60px;
+            width: 60px;
+        }
+
+        .icons2 {
+            background-color: #212121;
+            color: #86868B;
+            font-size: 44px;
+            border: 2px solid #86868B;
+            line-height: 1.5;
+        }
+
+        .btn-last {
+            background-color: #212121;
+            border-radius: 50%;
+            border: 2px solid #86868B;
+            color: #86868B;
+            padding: 2px 20px 2px 20px;
+            font-size: 44px !important;
+            line-height: 1.5;
+        }
+
+        /********************************************************* footer section *********************************************************/
+        .foot-font {
+            text-align: left;
+            font-size: 14px;
+            background-color: #212121;
+            border-top: 1px solid #444444;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            color: #86868B;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--*********************************************************** 1st Navigation *****************************************************-->
+    <header>
+        <nav class="navbar navbar-expand-md fontA ">
+            <div class="container">
+                <span class="logo"><a class="navbar-brand" href="#"><i class="fa fa-apple" aria-hidden="true"
+                            style="font-size: 20px;"></i></a></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon" style="color:#D6D6D6; font-size:28px;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav justify-content-between w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-search" style="font-size: 19px;"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-bag" style="font-size: 19px;"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--********************************************************* End 1ST Navigation ****************************************************-->
+
+
+    <!--******************************************************** 2ND Navigation *********************************************************-->
+    <div id="myHeader">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#"><span style="font-size:12px; color:gray;">13-inch
+                        model</span><br><b class="macb">MacBook Pro</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbars">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon" style="color:#000000; font-size:28px;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbars">
+                    <ul class="navbar-nav ml-auto o">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">macOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="font-size:12px; color:gray;">Tech Specs</a>
+                        </li>
+                        <li class="nav-item">
+                            <form><button type="button" class="my-btn">Buy</button></form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr class="hr1">
+        </div>
+    </div>
+
+    <!--******************************************************* End 2ND Navigation *******************************************************-->
+
+
+    <!--***************************************************** laptop picture section ***************************************************-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <figure>
+                    <img src="pictures/laptop.png" alt="laptop image" class="img-fluid">
+                </figure>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--**************************************************** End laptop picture section ***********************************************-->
+
+
+    <!--**************************************************** price section *************************************************************-->
+    <div class="container">
+        <div class="row price">
+            <div class="col-md-4" style="font-size: 24px; font-family: 'Nunito', sans-serif;"><b>Price</b></div>
+            <div class="col-md-2">$1299</div>
+            <div class="col-md-2">$1499</div>
+            <div class="col-md-2">$1799</div>
+            <div class="col-md-2">$1999</div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--**************************************************** End price section *********************************************************-->
+
+
+    <!--******************************************************* finish section *********************************************************-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 finish"><b>Finish</b></div>
+            <div class="col-md-10" style="padding-top: 30px; padding-bottom:0px;">
+                <figure>
+                    <img src="pictures/laptop2.png" alt="laptop image 2" class="img-fluid">
+                </figure>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--*******************************************************  End finish section ****************************************************-->
+
+
+    <!--******************************************************* display section *******************************************************-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 display">
+                <p>Display</p>
+            </div>
+            <div class="col-md-9 display2">
+                <b class="display3">Retina display</b><br><br>13.3-inch (diagonal) LED-backlit display with IPS
+                technology;
+                2560-by-1600 native resolution at 227 pixels per inch with support for millions of
+                colors<br><br>Supported scaled resolutions:<br><br>
+                <ul>
+                    <li>1680 by 1050<br><br></li>
+                    <li>1440 by 900<br><br></li>
+                    <li>1024 by 640</li>
+                </ul>
+                <br>500 nits brightness<br><br>Wide color (P3)<br><br>True Tone technology
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--******************************************************* End display section *****************************************************-->
+
+
+    <!--*******************************************************  processor section ******************************************************-->
+    <div class="container">
+        <div class="row pr">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Processor</b>
+            </div>
+            <div class="col-md-4">
+                <p>1.4GHz quad‑core 8th‑generation Intel<br>Core i5, Turbo Boost up to 3.9GHz, with<br>128MB of
+                    eDRAM<br><br>
+                    Configurable to 1.7GHz quad‑core<br>8th‑generation Intel Core i7, Turbo Boost<br>up to 4.5GHz, with
+                    128MB of
+                    eDRAM</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <p>2.0GHz quad‑core 10th‑generation Intel<br>Core i5, Turbo Boost up to 3.8GHz, with<br>6MB shared L3
+                    cache<br><br>
+                    Configurable to 2.3GHz quad‑core<br>10th‑generation Intel Core i7, Turbo<br>up to 4.1GHz, with 8MB
+                    shared L3
+                    cache</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--*******************************************************  End processor section ***************************************************-->
+
+
+    <!--******************************************************* storage section *******************************************************-->
+    <div class="container">
+        <div class="row storage">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Storage<sup>1</sup></b>
+            </div>
+            <div class="col-md-2">
+                <p><button type="button" class="button1">128GB</button><br><br>128GB SSD<br><br>Configurable to 256GB,
+                    512GB,
+                    1TB, or 2TB SSD</p>
+            </div>
+            <div class="col-md-2">
+                <p><button type="button" class="button1">256GB</button><br><br>256GB SSD<br><br>Configurable to 512GB,
+                    1TB, or
+                    2TB SSD</p>
+            </div>
+            <div class="col-md-2">
+                <p><button type="button" class="button1">256GB </button><br><br>256GB SSD<br><br>Configurable to 512GB,
+                    1TB, or
+                    2TB SSD</p>
+            </div>
+            <div class="col-md-2">
+                <p><button type="button" class="button1">128GB</button><br><br>512GB SSD<br><br>Configurable to 1TB or
+                    2TB SSD
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--******************************************************* End storage section ***************************************************-->
+
+
+    <!--******************************************************* memory section *******************************************************-->
+    <div class="container">
+        <div class="row memory">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Memory</b>
+            </div>
+            <div class="col-md-4">
+                <p><button type="button" class="button1">8GB</button><br><br>8GB of 2133MHz LPDDR3 onboard
+                    memory<br><br>
+                    Configurable to 16GB of memory</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <p><button type="button" class="button1">16GB</button><br><br>16GB of 3733MHz LPDDR4x onboard
+                    memory<br><br>
+                    Configurable to 32GB of memory</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--******************************************************* End memory section *****************************************************-->
+
+
+    <!--******************************************************* graphics section *******************************************************-->
+    <div class="container">
+        <div class="row graph">
+            <div class="col-md-3">
+                <p><b style="font-size: 24px; font-family:'Nunito', sans-serif;">Graphics</b></p>
+            </div>
+            <div class="col-md-4">
+                <p>Intel Iris Plus Graphics 645</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <p>Intel Iris Plus Graphics 655</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--******************************************************* End graphics section ***************************************************-->
+
+
+    <!--************************************************ charging and expansion section ************************************************-->
+    <div class="container">
+        <div class="row charging">
+            <div class="col-md-2">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Charging and<br> Expansion</b>
+            </div>
+            <div class="col-md-5">
+                <p>Two Thunderbolt 3 (USB‑C) ports with<br>support for:<br>Charging<br>DisplayPort<br>Thunderbolt (up to
+                    40Gb/s)<br>
+                    USB 3.1 Gen 2 (up to 10Gb/s)<br><br></p>
+                <figure><img src="pictures/tunderbolt.png" alt="tunderbolt image" class="img-fluid"></figure>
+
+            </div>
+            <div class="col-md-5">
+                <p>Four Thunderbolt 3 (USB-C) ports with<br>support for:<br>Charging<br>DisplayPort<br>Thunderbolt (up
+                    to
+                    40Gb/s)<br>
+                    USB 3.1 Gen 2 (up to 10Gb/s)<br><br> </p>
+                <figure>
+                    <img src="pictures/tunderbolt2.png" alt="tunderbolt image 2" class="img-fluid">
+                </figure>
+
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--************************************************** End charging and expansion section *******************************************-->
+
+
+    <!--************************************************** keyboard and trackpad ********************************************************-->
+    <div class="container">
+        <div class="row keyboard">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Keyboard and<br>Trackpad</b>
+            </div>
+            <div class="col-md-9">
+                <p><b style="font-size:17px; font-family:'Nunito', sans-serif;">Full-size backlit keyboard with:</b><br>
+                    64 (U.S.) or 65 (ISO) keys including 4 arrow keys<br>Touch Bar with integrated Touch ID sensor<br>
+                    Ambient light sensor<br>Force Touch trackpad for precise cursor control and pressure‑sensing
+                    capabilities;
+                    enables<br>
+                    Force clicks, accelerators, pressure‑sensitive drawing, and Multi-Touch gestures<br><br></p>
+                <figure><img src="pictures/trackpad.png" alt="trackpad image" class="img-fluid"></figure>
+
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--************************************************** End keyboard and trackpad **************************************************-->
+
+
+    <!--******************************************************** wireless section *****************************************************-->
+    <div class="container">
+        <div class="row ws">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Wireless</b>
+            </div>
+            <div class="col-md-9">
+                <p><b style="font-size: 17px; font-family:'Nunito', sans-serif;">Wi-Fi</b><br>802.11ac Wi‑Fi wireless
+                    networking<br>
+                    IEEE 802.11a/b/g/n compatible<br><br><b
+                        style="font-size: 17px; font-family:'Nunito', sans-serif;">Bluetooth</b><br>
+                    Bluetooth 5.0 wireless technology</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--********************************************************* End wireless section **************************************************-->
+
+
+    <!--********************************************************* camera section ********************************************************-->
+    <div class="container">
+        <div class="row cam">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Camera</b>
+            </div>
+            <div class="col-md-9">
+                <p>720p FaceTime HD camera</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--********************************************************* End camera section ****************************************************-->
+
+
+    <!--********************************************************* video support section *************************************************-->
+    <div class="container">
+        <div class="row videos">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Video Support</b>
+            </div>
+            <div class="col-md-4">
+                <p><b style="font-size:17px; font-family:'Nunito', sans-serif;">Simultaneously supports full native
+                        resolution<br>on the built-in
+                        display at millions of colors<br>and:</b><br><br>One external 5K display with
+                    5120-by-2880<br>resolution at
+                    60Hz at over a billion
+                    colors,<br>or<br><br>Up to two external 4K displays with 4096-<br>by-2304 resolution at 60Hz at
+                    millions
+                    of<br>colors<br><br>
+                    <b style="font-size:17px; font-family:'Nunito', sans-serif;">Thunderbolt 3 digital video
+                        output</b><br><br>Native DisplayPort
+                    output over USB‑C<br>VGA, HDMI, DVI, and Thunderbolt 2 output<br>supported using adapters (sold
+                    separately)
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <p><b style="font-size:17px; font-family:'Nunito', sans-serif;">Simultaneously supports full native
+                        resolution<br>on the built-in
+                        display at millions of colors<br>and:</b><br><br>One external 6K display with
+                    6016-by-3384<br>resolution at
+                    60Hz at over a billion
+                    colors,<br>or<br><br>One external 5K display with 5120-by-2880<br>resolution at 60Hz at over a
+                    billion
+                    colors,<br>or<br><br>
+                    Up to two external 4K displays with 4096-<br>by-2304 resolution at 60Hz at millions
+                    of<br>colors<br><br>
+                    <b style="font-size:17px; font-family:'Nunito', sans-serif;">Thunderbolt 3 digital video
+                        output</b><br><br>Native DisplayPort
+                    output over USB‑C<br>VGA, HDMI, DVI, and Thunderbolt 2 output<br>supported using adapters (sold
+                    separately)
+                </p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!-- ************************************************* End video support section **************************************************-->
+
+
+    <!--****************************************************** audio section **********************************************************-->
+    <div class="container">
+        <div class="row audios">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Audio</b>
+            </div>
+            <div class="col-md-9">
+                <p>Stereo speakers with high dynamic range<br><br>Wide stereo sound<br><br>Support for Dolby Atmos
+                    playback<br><br>Three-mic
+                    array with directional beamforming<br><br>3.5mm headphone jack</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--****************************************************** End audio section ******************************************************-->
+
+
+    <!--****************************************************** battery and power section ***********************************************-->
+    <div class="container">
+        <div class="row power">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Battery and Power<sup>2</sup></b>
+            </div>
+            <div class="col-md-4">
+                <p>Up to 10 hours wireless web<br><br>Up to 10 hours iTunes movie playback<br><br>Up to 30 days of
+                    standby
+                    time<br><br>
+                    Built‑in 58.2‑watt‑hour lithium‑polymer<br>battery<br><br>61W USB‑C Power Adapter</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <p>Up to 10 hours wireless web<br><br>Up to 10 hours iTunes movie playback<br><br>Up to 30 days of
+                    standby
+                    time<br><br>
+                    Built‑in 58.0‑watt‑hour lithium‑polymer<br>battery<br><br>61W USB‑C Power Adapter</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--**************************************************** End battery and power section *********************************************-->
+
+
+    <!--************************************************ operating requirements section *************************************************-->
+    <div class="container">
+        <div class="row operating">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Operating Requirements</b>
+            </div>
+            <div class="col-md-9">
+                <p><b class="orq">Line voltage:</b>&nbsp;<span style="font-size: 17px;">100V to 240V AC</span><br><br><b
+                        class="orq">Frequency:
+                    </b>&nbsp; 50Hz to 60Hz<br><br><b class="orq">Operating temperature:</b>&nbsp;50° to 95° F (10° to
+                    35°
+                    C)<br><br>
+                    <b class="orq"> Storage temperature:</b>&nbsp;-13° to 113° F (-25° to 45° C)<br><br><b class="orq">
+                        Relative
+                        humidity:</b>&nbsp;
+                    0% to 90% noncondensing<br><br><b class="orq">Operating altitude:</b>&nbsp; tested up to 10,000
+                    feet<br><br>
+                    <b class="orq"> Maximum storage altitude:</b>&nbsp; 15,000 feet<br><br><b class="orq">Maximum
+                        shipping
+                        altitude:</b>&nbsp;
+                    35,000 feet</p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--************************************************* End operating requirements section *******************************************-->
+
+
+    <!--*************************************************** size and weight section ****************************************************-->
+    <div class="container">
+        <div class="row weight">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Size and Weight</b>
+            </div>
+            <div class="col-md-9">
+                <b class="orq">Height:</b> 0.59 inch (1.49 cm)<br><br>
+                <b class="orq">Width:</b> 11.97 inches (30.41 cm)<br><br>
+                <b class="orq">Depth:</b> 8.36 inches (21.24 cm)<br><br>
+                <b class="orq">Weight:</b> 3.02 pounds (1.37 kg)<sup>3</sup><br><br>
+                <figure><img src="pictures/laptop3.png" alt="laptop image 3" class="img-fluid"></figure>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--************************************************* End size and weight section **************************************************-->
+
+
+    <!--**************************************************** operating system section **************************************************-->
+    <div class="container">
+        <div class="row operating2">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Operating System</b>
+            </div>
+            <div class="col-md-9">
+                <p><b style="font-size: 18px; font-family:'Nunito', sans-serif;">macOS</b><br>macOS is the operating
+                    system that
+                    powers everything
+                    you do on a Mac. macOS Catalina brings<br>new, dedicated apps for music, TV, and podcasts. Smart
+                    updates to
+                    the apps you use
+                    most.<br>And Sidecar, which lets you use iPad as a second display. So you can take everything you do
+                    above and
+                    beyond.<br><br>
+                    <a href="index.html" target="_self">Learn More ></a></p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--**************************************************** End operating system section ***********************************************-->
+
+
+    <!--**************************************************** accessibility section ******************************************************-->
+    <div class="container">
+        <div class="row accb">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Accessibility</b>
+            </div>
+            <div class="col-md-9">
+                <p>Accessibility features help people with disabilities get the most out of their new MacBook Pro.<br>
+                    With built-in support for vision, hearing, mobility, and learning, you can create and do amazing
+                    things.<br><br>
+                    <a href="index.html" target="_self">Learn More ></a><br><br>
+                    <b style="font-size: 17px; font-family:'Nunito', sans-serif;">Features include:</b><br>
+            </div>
+        </div>
+
+        <div class="row accb2">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Voice Control<br><br></li>
+                    <li>VoiceOver<br><br></li>
+                    <li>Zoom</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Increase Contrast<br><br></li>
+                    <li>Reduce Motion<br><br></li>
+                    <li>Siri and Dictation</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Switch Control<br><br></li>
+                    <li>Closed Captions<br><br></li>
+                    <li>Text to Speech</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--*************************************************** End accessibility section **************************************************-->
+
+
+    <!--**************************************************** built in apps  section ****************************************************-->
+    <div class="container">
+        <div class="row app">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Built-in Apps<sup>4</sup></b>
+            </div>
+            <div class="col-md-9">
+                <figure><img src="pictures/apps.png" alt="apps image" class="img-fluid"></figure>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--**************************************************** End built in apps  section *************************************************-->
+
+
+    <!--***************************************************** in the box section ********************************************************-->
+    <div class="container">
+        <div class="row boxs">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">In the Box</b>
+            </div>
+            <div class="col-md-9">
+                <p>13‑inch MacBook Pro<br><br>61W USB‑C Power Adapter<br><br>USB-C Charge Cable (2 m)<br><br><br></p>
+                <figure><img src="pictures/laptop4.png" alt="laptop image 4" class="img-fluid"></figure>
+
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--**************************************************** End in the box section ****************************************************-->
+
+
+    <!--************************************** limited warranty and service section ****************************************************-->
+    <div class="container">
+        <div class="row warrantys">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Limited Warranty<br>and Service</b>
+            </div>
+            <div class="col-md-9">
+                <p>Your MacBook Pro comes with 90 days of complimentary technical support and a one‑year<br>limited
+                    warranty.
+                    Purchase
+                    <a href="index.html" target="_self">AppleCare+ for Mac</a> to extend your coverage to three years
+                    from<br>
+                    your AppleCare+ purchase date and add up to two incidents of accidental damage coverage,<br>
+                    each subject to a service fee of $99 for screen damage or external enclosure damage, or $299<br>
+                    for other repairable damage, plus applicable tax.<br><br><a href="index.html" target="_self">Learn
+                        More ></a>
+                </p>
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+
+    <!--********************************************* End limited warranty and service section ******************************************-->
+
+
+    <!--************************************************** configure to order section ***************************************************-->
+    <div class="container">
+        <div class="row orders">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Configure to Order</b>
+            </div>
+            <div class="col-md-9">
+                <p>Configure your MacBook Pro with these options, only at <a href="index.html" target="_self">
+                        apple.com:</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row orders2">
+            <div class="col-md-3"></div>
+            <div class="col-md-4">
+                <p>1.7GHz quad-core Intel Core i7, Turbo<br> Boost up to 4.5GHz, with 128MB of<br>
+                    eDRAM 16GB of 2133MHz LPDDR3 <br> memory 256GB, 512GB, 1TB, or 2TB<br> SSD</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <p>2.8GHz quad-core Intel Core i7, Turbo<br>Boost up to 4.7GHz, with 128MB of<br>
+                    eDRAM 16GB of 2133MHz LPDDR3<br> memory 512GB, 1TB, or 2TB<br> SSD</p>
+            </div>
+        </div>
+    </div><br>
+
+    <!--************************************************ End configure to order section ***************************************************-->
+
+
+    <!--************************************************** Macbook box section ***************************************************-->
+    <div class="container">
+        <div class="box flex-container">
+            <div class="row">
+                <div class="col-md-12 greens">
+                    <figure>MacBook Pro and the Environment<span style="float: right;">
+                            <img src="pictures/apple.png" alt="apple image" class="img-fluid"></span></figure>
+                </div><br><br><br><br>
+
+                <div class="row box3" style="font-family:'Work Sans', sans-serif;font-size: 17px;">
+                    <div class="col-md-12">
+                        <p>Apple takes a complete product life cycle approach to determining<br>
+                            our environmental impact.<a href="index.html" target="_self"> Learn More ></a></p>
+                    </div>
+                </div><br><br><br><br>
+
+                <div class="row box4" style="font-family:'Work Sans', sans-serif;font-size: 17px;">
+                    <div class="col-md-6">
+                        <b style="font-family: 'Nunito', sans-serif;">MacBook Pro is designed with the following<br>
+                            features to reduce its environmental impact:</b><br><br>
+                        <ul>
+                            <li>Mercury-free LED-backlit display</li>
+                            <li>Arsenic-free display glass</li>
+                            <li>BFR-free</li>
+                            <li>PVC-free<sup>5</sup></li>
+                            <li>Beryllium-free</li>
+                            <li>Highly recyclable aluminum enclosure</li>
+                            <li>Meets ENERGY STAR requirements</li>
+                            <li>Rated EPEAT Gold<sup>6</sup></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p><b style="font-family: 'Nunito', sans-serif;">Apple and the Environment</b><br>
+                            Read our <a href="index.html" target="_self">Product Environmental Reports</a> for
+                            detailed information on the environmental performance of every Apple product.<br><br><br>
+                            <b style="font-family: 'Nunito', sans-serif;">Apple Trade In</b><br>
+                            Letting go of your old Mac is easy. If it’s in good shape, you can trade it in for
+                            Apple Store credit. If it’s not eligible for credit, we’ll recycle it responsibly at
+                            no cost to you. Good for you. Good for the planet.<br><br>
+                            <a href="index.html" target="_self">Learn More ></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--************************************************ End Macbook box section  ***********************************************-->
+
+
+    <!--****************************************************** line break **************************************************************-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="hr2"><br>
+            </div>
+        </div>
+    </div>
+
+    <!--****************************************************** End line break *********************************************************-->
+
+
+    <!--**************************************************** accessories section *******************************************************-->
+    <div class="container">
+        <div class="row as">
+            <div class="col-md-3">
+                <b style="font-size: 24px; font-family:'Nunito', sans-serif;">Accessories</b>
+            </div>
+            <div class="col-md-4">
+                <b style="font-size: 17px; font-family:'Nunito', sans-serif;">Mac Software</b><br><br>
+                <a href="index.html" target="_self">Final Cut Pro X</a><br>
+                <a href="index.html" target="_self">Logic Pro X</a><br><br>
+                <b style="font-size: 17px; font-family:'Nunito', sans-serif;">Displays and Adapters</b><br><br>
+                <a href="index.html" target="_self">Pro Display XDR</a><br>
+                <a href="index.html" target="_self">LG UltraFine 4K Display</a><br>
+                <a href="index.html" target="_self">LG UltraFine 5K Display</a><br>
+                <a href="index.html" target="_self">Thunderbolt 3 (USB-C) to Thunderbolt 2 <br>Adapter</a><br>
+                <a href="index.html" target="_self">USB-C to USB Adapter</a><br>
+                <a href="index.html" target="_self">USB-C to SD Card Reader</a><br>
+                <a href="index.html" target="_self">USB-C Digital AV Multiport Adapter</a><br>
+                <a href="index.html" target="_self">USB-C VGA Multiport Adapter</a><br>
+                <a href="index.html" target="_self">USB-C to Gigabit Ethernet Adapter</a>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <b style="font-size: 17px; font-family:'Nunito', sans-serif;">Other Accessories</b><br><br>
+                <a href="index.html" target="_self">USB-C to Lightning Cable</a><br>
+                <a href="index.html" target="_self">USB-C Charge Cable</a><br>
+                <a href="index.html" target="_self">61W USB-C Power Adapter</a><br>
+                <a href="index.html" target="_self">13‑inch MacBook Pro Leather Sleeve</a><br>
+                <a href="index.html" target="_self">Blackmagic eGPU</a><br>
+                <a href="index.html" target="_self">Blackmagic eGPU Pro</a><br>
+                <a href="index.html" target="_self">Magic Keyboard</a><br>
+                <a href="index.html" target="_self">Magic Keyboard with Numeric Keypad</a><br>
+                <a href="index.html" target="_self">Magic Trackpad 2</a><br>
+                <a href="index.html" target="_self">Magic Mouse 2</a><br>
+                <a href="index.html" target="_self">AppleCare+ for Mac</a><br>
+            </div>
+        </div>
+    </div><br>
+
+    <!--**************************************************** End accessories section ****************************************************-->
+
+
+    <!--******************************************************* trade in section ********************************************************-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 trade-in">
+                <p><b style="font-size: 20px;">Apple Trade In</b><br>
+                    <b style="font-size: 48px; line-height: 60px; font-weight: 900; color: #1C1D1E;">
+                        Get up to $1180 toward a new MacBook Pro.<sup>*</sup></b><br><br>
+                    <span class="trade-in2">Just trade in your eligible computer for credit or recycle it for free.
+                        It’s good for you and the planet.</span><br><br>
+                    <a href="index.html" target="_self" class="trade-in2">Learn More ></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--******************************************************* End trade in section ****************************************************-->
+
+
+    <!--****************************************************** macbook pro section *****************************************************-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pro">
+                <p><b style="font-size: 62px;font-weight:900; font-family:'Nunito', sans-serif; color:white;">
+                        MacBook
+                        Pro</b><br><br>
+                    <a href="index.html" target="_self">Shop now ></a>&nbsp;&nbsp;&nbsp;
+                    <a href="index.html" target="_self">Compare all Mac models ></a></p><br>
+            </div>
+        </div>
+        <div class="row p">
+            <div class="col-md-1"></div>
+            <div class="col-md-10" style="text-align: left !important;">
+                <figure><img src="pictures/laptop5.png" alt="laptop image" class="img-fluid"></figure><br>
+                <hr class="hr3">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pro2">
+                <i class="fa fa-archive icons" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-4 pro2">
+                <button class="btn-last"><i class="fa fa-usd" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-md-4 pro2">
+                <i class="fa fa-comments icons2" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pro3">
+                <p style="line-height: 40px;"><b style="font-size:24px;">Fast, free<br>no-contact
+                        delivery</b><br>And free returns. See
+                    checkout for<br> delivery dates.<br>
+                    <a href="index.html" target="_self">Learn More ></a></p>
+            </div>
+            <div class="col-md-4 pro3">
+                <p style="line-height: 40px;"><b style="font-size:24px;">Find the card for you</b><br>Get 3% Daily
+                    cash with Apple
+                    Card<br> or get special financing.<br>
+                    <a href="index.html" target="_self">Learn More ></a></p>
+            </div>
+            <div class="col-md-4 pro3">
+                <p style="line-height: 40px;"><b style="font-size:24px;">Get help buying</b><br>Have a question?
+                    Call a Specialist or<br>chat online. Call 1-800-MY-APPLE.
+                    <br><a href="index.html" target="_self">Contact us ></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--**************************************************** End macbook pro section ****************************************************-->
+
+
+    <!--******************************************************** footer section *********************************************************-->
+    <div class="container">
+        <div class="row foot-font">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4" style="font-size:13px;">copyright
+                        <i class="fa fa-copyright" aria-hidden="true"> 2020 Apple Inc. All rights reserved.</i>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Privacy Policy&nbsp;&nbsp;|&nbsp;&nbsp;Terms of Use&nbsp;&nbsp;|&nbsp;&nbsp;
+                            Sales and Refunds&nbsp;&nbsp;|&nbsp;&nbsp;Legal&nbsp;&nbsp;|&nbsp;&nbsp;Site Map</p>
+                    </div>
+                    <div class="col-md-2" style="text-align: right !important;"><i class="fa fa-globe"
+                            aria-hidden="true"></i>
+                        United States</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--**************************************************** size and weight section ****************************************************-->
+
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <!--******************************************************** Bootsrap 4 scripts ****************************************************-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
